@@ -6,7 +6,7 @@ openai.api_type = "azure"
 openai.api_version = "2023-03-15-preview"
 
 # specifying our server
-GUILD = "{Creative-Tech-Apprenticeship}"
+#GUILD = "{Creative-Tech-Apprenticeship}"
 
 # create an object that will control our discord bot
 client = discord.Client(intents=discord.Intents.default())
@@ -16,9 +16,9 @@ openai.api_base = os.environ["API_BASE"]
 
 @client.event
 async def on_ready():
-	for guild in client.guilds:
-		if guild.name == GUILD:
-			break
+	#for guild in client.guilds:
+		#if guild.name == GUILD:
+			#break
 	# print out nice statment saying our bot is online (only in command prompt)
 	print(f'{client.user} has connected to Discord!')
 
